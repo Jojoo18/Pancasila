@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jejak Historis Pancasila | Dari Rahim Perjuangan ke Dasar Negara</title>
+    <meta name="description" content="Mengungkap perjalanan panjang kelahiran Pancasila sebagai dasar negara Republik Indonesia" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --primary-color: #e63946; /* Merah Garuda */
+        --secondary-color: #1d3557; /* Biru Perisai */
+        --accent-color: #f4a261; /* Emas Pancasila */
+        --light-color: #f1faee; /* Putih Bersih */
+        --dark-color: #1d3557; /* Biru Tua */
+        --white: #ffffff;
+        --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--light-color);
+        color: var(--dark-color);
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: var(--white);
+        padding: 3rem 1rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 5px solid var(--accent-color);
+      }
+
+      header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.1)" d="M0,0 L100,0 L100,100 L0,100 Z"></path></svg>');
+        opacity: 0.1;
+      }
+
+      header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      header p {
+        font-size: 1.3rem;
+        opacity: 0.9;
+        position: relative;
+        font-style: italic;
+      }
+
+      nav {
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        color: var(--white);
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-family: 'Times New Roman', serif;
+      }
+
+      .logo i {
+        margin-right: 0.5rem;
+        color: var(--accent-color);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 0;
+        position: relative;
+        transition: var(--transition);
+        font-size: 1.1rem;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-color);
+      }
+
+      .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-color);
+        transition: var(--transition);
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 720px;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+      }
+
+      .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+      }
+
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        border-radius: 10px;
+      }
+
+      .card {
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 2.5rem;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        border-top: 3px solid var(--accent-color);
+        margin-bottom: 3rem;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+      }
+
+      .card h2 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 0.5rem;
+        display: inline-block;
+      }
+
+      .card p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+
+      .card .date {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: var(--white);
+        padding: 0.3rem 1rem;
+        border-radius: 50px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border: 5px solid var(--white);
+        outline: 2px solid var(--accent-color);
+      }
+
+      .quote {
+        font-style: italic;
+        padding: 2rem;
+        background-color: rgba(244, 162, 97, 0.1);
+        border-left: 4px solid var(--accent-color);
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+
+      .quote::before,
+      .quote::after {
+        content: '"';
+        font-size: 1.5rem;
+        color: var(--accent-color);
+      }
+
+      footer {
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        color: var(--white);
+        text-align: center;
+        padding: 3rem 1rem;
+        margin-top: 5rem;
+        position: relative;
+      }
+
+      footer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(to right, var(--primary-color), var(--accent-color), var(--secondary-color));
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        text-align: left;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        position: relative;
+        display: inline-block;
+      }
+
+      .footer-section h3::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 50%;
+        height: 3px;
+        background-color: var(--accent-color);
+      }
+
+      .footer-section p,
+      .footer-section a {
+        opacity: 0.9;
+        color: var(--white);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 0.8rem;
+        transition: var(--transition);
+        font-size: 1.05rem;
+      }
+
+      .footer-section a:hover {
+        opacity: 1;
+        padding-left: 10px;
+        color: var(--accent-color);
+      }
+
+      .footer-section i {
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+      }
+
+      .social-links a {
+        color: var(--white);
+        font-size: 1.8rem;
+        transition: var(--transition);
+      }
+
+      .social-links a:hover {
+        transform: translateY(-5px);
+        color: var(--accent-color);
+      }
+
+      .copyright {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        font-size: 1rem;
+      }
+
+      .copyright a {
+        color: var(--accent-color);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          padding-top: 1rem;
+          gap: 0;
+        }
+
+        .nav-links a {
+          padding: 1rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        header h1 {
+          font-size: 2.2rem;
+        }
+
+        header p {
+          font-size: 1.1rem;
+        }
+
+        .timeline::after {
+          left: 31px;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>JEJAK SEJARAH PANCASILA</h1>
+      <p>"Dari Rahim Perjuangan Menuju Dasar Negara"</p>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <a href="home.html" class="logo"> <i class="fas fa-star"></i> PANCASILA </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="home.html"><i class="fas fa-home"></i> Beranda</a>
+          <a href="sejarah.html" class="active"><i class="fas fa-monument"></i> Jejak Sejarah</a>
+          <a href="makna.html"><i class="fas fa-brain"></i> Makna Filosofis</a>
+          <a href="simbol.html"><i class="fas fa-shield-alt"></i> Simbol Kebangsaan</a>
+          <a href="nilai.html"><i class="fas fa-heart"></i> Nilai Luhur</a>
+          <a href="latihan.html"><i class="fas fa-graduation-cap"></i> Uji Pemahaman</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <img src="https://akcdn.detik.net.id/visual/2021/06/01/cover-fokus-hut-pancasila-2021_169.jpeg?w=400&q=90" alt="Sejarah Pancasila" class="hero-image" />
+
+      <div class="quote">"Pancasila itu bukan saja falsafah negara, tetapi lebih luas dari itu, ia adalah falsafah bangsa kita." - Ir. Soekarno</div>
+
+      <section class="card">
+        <span class="date">1 Juni 1945</span>
+        <h2>Kelahiran Pancasila</h2>
+        <p>
+          Pada pidato bersejarah di sidang BPUPKI, Ir. Soekarno pertama kali mengemukakan konsep Pancasila sebagai dasar negara Indonesia merdeka. Gagasan ini merupakan kristalisasi nilai-nilai luhur yang telah hidup dalam masyarakat
+          Nusantara selama berabad-abad.
+        </p>
+        <p>
+          Dalam pidatonya, Soekarno menyampaikan lima prinsip dasar: Kebangsaan Indonesia, Internasionalisme atau Perikemanusiaan, Mufakat atau Demokrasi, Kesejahteraan Sosial, dan Ketuhanan Yang Maha Esa. Kelima prinsip ini kemudian
+          disempurnakan menjadi Pancasila seperti yang kita kenal sekarang.
+        </p>
+      </section>
+
+      <section class="card">
+        <span class="date">22 Juni 1945</span>
+        <h2>Piagam Jakarta</h2>
+        <p>
+          Panitia Sembilan yang diketuai oleh Ir. Soekarno berhasil merumuskan naskah kompromi yang dikenal sebagai Piagam Jakarta (Jakarta Charter). Dokumen ini memuat rumusan awal Pancasila dengan urutan dan redaksi yang sedikit berbeda
+          dari versi final.
+        </p>
+        <p>
+          Poin kontroversial dalam Piagam Jakarta adalah sila pertama yang berbunyi "Ketuhanan dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya". Rumusan ini kemudian diubah setelah konsultasi dengan berbagai pihak untuk
+          menjaga persatuan bangsa.
+        </p>
+      </section>
+
+      <section class="card">
+        <span class="date">18 Agustus 1945</span>
+        <h2>Pengesahan Resmi</h2>
+        <p>Setelah proklamasi kemerdekaan, Panitia Persiapan Kemerdekaan Indonesia (PPKI) mengadakan sidang untuk mengesahkan UUD 1945 yang memuat Pancasila dalam Pembukaannya. Rumusan final Pancasila yang disahkan adalah:</p>
+        <ol style="margin-left: 2rem; line-height: 2">
+          <li>Ketuhanan Yang Maha Esa</li>
+          <li>Kemanusiaan yang adil dan beradab</li>
+          <li>Persatuan Indonesia</li>
+          <li>Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan</li>
+          <li>Keadilan sosial bagi seluruh rakyat Indonesia</li>
+        </ol>
+        <p>Pengubahan sila pertama menjadi "Ketuhanan Yang Maha Esa" menunjukkan semangat inklusivitas dan penghormatan terhadap semua agama yang dianut bangsa Indonesia.</p>
+      </section>
+
+      <section class="card">
+        <h2>Tokoh-tokoh Perumus</h2>
+        <p>Selain Ir. Soekarno, banyak tokoh bangsa yang turut berkontribusi dalam perumusan Pancasila:</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem">
+          <div style="background: rgba(244, 162, 97, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-color)">
+            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem">Mohammad Hatta</h3>
+            <p>Wakil Presiden pertama yang berperan dalam penyempurnaan rumusan Pancasila, terutama terkait sila pertama.</p>
+          </div>
+
+          <div style="background: rgba(244, 162, 97, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-color)">
+            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem">Mr. Mohammad Yamin</h3>
+            <p>Mengusulkan lima asas dasar negara dalam pidatonya pada 29 Mei 1945, sebelum Soekarno menyampaikan Pancasila.</p>
+          </div>
+
+          <div style="background: rgba(244, 162, 97, 0.1); padding: 1.5rem; border-radius: 8px; border-left: 3px solid var(--accent-color)">
+            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem">Ki Bagus Hadikusumo</h3>
+            <p>Tokoh Muhammadiyah yang berperan dalam perumusan sila Ketuhanan Yang Maha Esa.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Tentang Portal Ini</h3>
+          <p>Sebuah inisiatif edukasi untuk menghidupkan nilai-nilai Pancasila melalui media digital interaktif, menjadikan filsafat bangsa sebagai kekuatan pemersatu di era disrupsi.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Jelajahi Pancasila</h3>
+          <a href="home.html"><i class="fas fa-arrow-right"></i> Beranda</a>
+          <a href="sejarah.html"><i class="fas fa-arrow-right"></i> Jejak Historis</a>
+          <a href="makna.html"><i class="fas fa-arrow-right"></i> Tafsir Filosofis</a>
+          <a href="latihan.html"><i class="fas fa-arrow-right"></i> Arena Belajar</a>
+        </div>
+        <div class="footer-section">
+          <h3>Hubungi Kami</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Jl. Pancasila No. 1, Jakarta Pusat</p>
+          <p><i class="fas fa-envelope"></i> info@pancasila-digital.id</p>
+          <p><i class="fas fa-phone"></i> +62 813-7591-296</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 <a href="#">Pancasila Digital</a>. Karya Jonathan Christian. Seluruh hak cipta dilindungi Undang-Undang.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Active link highlighting
+      const currentPage = window.location.pathname.split('/').pop();
+      const navLinksAll = document.querySelectorAll('.nav-links a');
+
+      navLinksAll.forEach((link) => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
+</html>
